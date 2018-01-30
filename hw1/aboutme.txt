@@ -1,0 +1,10 @@
+Your name: Ibrahim Ansari
+Your student ID: 011219169
+Your major: Computer Science 
+Your preferred email address: ibrahim2221916@gmail.com
+Check one: [X] Undergraduate, [ ] Graduate, [ ] Open university 
+Repeating the class? [ ] Yes, [X] No
+Semester, instructor, and grade of your CS151 prerequisite: Fall 2017, Vidya R., B+
+Time it took you to answer the question below: 1 Hour
+Did you ask anyone for help? [ ] Yes, [X] No
+If adding: [ ] Section 3, [ ] Section 4, [ ] Either
