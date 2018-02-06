@@ -1,0 +1,13 @@
+subs works by going through the String until it reaches the last index and then starts adding |, the base case, to the
+result. After that, every other call is just adding the next left char to each already existing | by using the replace
+method. It terminates when it reaches the last index. This problem was the trickiest problem, but it tuned out to be
+really simple after thinking about subsets that aren't substrings and reading the hints on Piazza. The substring(1) is
+to get rid of an extra |
+
+lcs works by slowly decreasing the size of a until a substring of a is contained in b, which is the base case. It
+checks if the decreasing 1 from the beginning or end of the string makes is contained in b, in which case it returns
+that as a base case. This program was relatively simple and intuitive to think about.
+
+onebits works by dividing n by 2 until it equals 2, which is the base case. We keep track of the index with i so we can
+add those to the list. It terminates when it finds all the bits in the binary representation of n. This problem was again
+pretty easy and intuitive. The reverse is used to get the correct answer since mine came out reversed.
