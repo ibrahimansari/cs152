@@ -1,6 +1,0 @@
-subs works by going through the String until it reaches the last index and then starts adding |, the base case, to the
-result. After that, every other call is just adding the next left char to each already existing | by using the replace
-method. It terminates when it reaches the last index. This problem was the trickiest problem, but it tuned out to be
-really simple after thinking about subsets that aren't substrings and reading the hints on Piazza.
-
-lcs works by
