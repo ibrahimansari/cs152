@@ -1,0 +1,33 @@
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading project definition from /home/pratik/Desktop/Horstmann/assignment2/PROFESSOR/hw2/project[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mSet current project to hw2 (in build file:/home/pratik/Desktop/Horstmann/assignment2/PROFESSOR/hw2/)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/pratik/Desktop/Horstmann/assignment2/PROFESSOR/hw2/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLcsSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- lcs of permission and cruise missile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Mary had a little lamb... *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "l" had length 1 instead of expected length 2 (LcsSuite.scala:14)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- How much wood... *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[uld ]" did not equal "[ a woodchuck c]" (LcsSuite.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- How much wood... should not take too long[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Nothing in common[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAnySuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Subs of Amy[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Subs of Mary[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Subs of Bill[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Subs of 0123456789[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Twelve letter string has 4096 subs[0m[0m
+
+
+no var, no arrays, no Java collections, no mutable Scala collections. 
+no use of any library function other than String.length, String.contains, 
+String.substring, String.replace, one call to List.map in onebits
+
+SubsSuite (1 point per passing test case, max. 5, 0 if forbidden constructs): 
+LcsSuite (1 point per passing test case, max. 5, 0 if forbidden constructs):
+OnebitsSuite (1 point per passing test case, max. 5, 0 if forbidden constructs):
+hw2.txt (1 point per problem, max. 3): 
+hw2test.scala contains test cases for all problems (max. 1): 
+
+Total Points : 12
