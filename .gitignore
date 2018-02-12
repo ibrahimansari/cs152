@@ -115,5 +115,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+.*
+*.class
+*.jar
+**/target/streams/**
+**/target/*/resolution-cache/**
+**/project/project/**
+**/project/target/**
 
 # End of https://www.gitignore.io/api/java,scala,windows,intellij
