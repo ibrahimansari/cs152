@@ -1,0 +1,13 @@
+Step 1
+
+1. take selects the first n elements
+
+ex. val x = List(1, 2,3).take(1)  // x: List[Int] = List(1)
+
+dropRight selects all elements except last n ones
+
+ex. val x = List(1, 2,3).dropRight(1)  // x: List[Int] = List(1, 2)
+
+2. take selects the first n elements while dropRight "drops" the last n elements
+
+3.
