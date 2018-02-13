@@ -4,12 +4,9 @@ object hw3 {
     def flip(f : (Int, Int) => Int)(x : Int, y : Int) = f(y, x)
 
     def zip(l1 : List[Int], l2 : List[Int], f: (Int, Int) => Int) : List[Int] =
-        if(l1.tail == Nil)
-            f(l1.head, l2.head) :: l2.tail
-        else if (l2.tail == Nil)
-            f(l1.head, l2.head) :: l1.tail
-        else
-        f(l1.head, l2.head) :: zip(l1.tail, l2.tail, f)
+        if(l1.tail == Nil) f(l1.head, l2.head) :: l2.tail
+        else if (l2.tail == Nil) f(l1.head, l2.head) :: l1.tail
+        else f(l1.head, l2.head) :: zip(l1.tail, l2.tail, f)
 
     def combineNeighbors(l : List[Int], f : (Int, Int) => Int) : List[Int] =
         if (l.tail.tail.length == 1) f(l.head, l.tail.head) :: l.tail.tail
@@ -30,8 +27,7 @@ object hw3 {
     def reduceWithDefault(x : Int, l : List[Int], f : (Int, Int)=>Int) : Int = {
         if(l.isEmpty) return x
         def helper(l: List[Int], p: Int): Int =
-            if (l.isEmpty) p else
-                helper(l.tail, f(p, l.head))
+            if (l.isEmpty) p else helper(l.tail, f(p, l.head))
         helper(l.tail, l.head)
     }
 
