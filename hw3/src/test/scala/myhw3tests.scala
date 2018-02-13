@@ -14,6 +14,10 @@ class myhw3tests extends FunSuite {
         assert(hw3.zip(List(1, 2, 3, 4), List(4, 5, 6), _ + _) == List(5, 7, 9, 4))
     }
 
+    test("Second list longer") {
+        assert(hw3.zip(List(1, 2, 3, 4), List(4, 5, 6, 7, 8), _ + _) == List(5, 7, 9, 11, 8))
+    }
+
     test("Multiplying neighbors, odd length") {
         assert(hw3.combineNeighbors(List(1, 2, 3, 4, 5), _ * _) == List(2, 12, 5))
     }
