@@ -10,13 +10,10 @@ object hw4 {
     }
 
     def tokens(input : String, reported : List[Regex], ignored : List[Regex]) : (List[String], Int) = {
-        if(input.length == 0) (Nil, -1)
-        else{
-            val accept = firstMatch(input, reported)
-            if(accept.length == 0) (Nil, 0) else {
-                accept :: tokens(input.substring(reported.length), reported, ignored)
-            }
-
+        if (input.length == 0) (Nil, -1)
+        else {
+            (Nil, -1)
+        }
     }
 
     val characters = (s : String) => s.toList.map("" + _)
