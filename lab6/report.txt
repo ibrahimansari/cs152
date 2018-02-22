@@ -1,0 +1,23 @@
+Team Members: Vishan Menon, Avi Bannerjee
+
+Step 3
+
+def firstMatch(str: String, regexes: List[Regex]) : String = {
+    if(regexes.head.findPrefixOf(str).isDefined)
+        regexes.head.findPrefixOf(str).get
+    else
+        firstMatch(str, regexes.tail)
+}
+
+Setp 4
+
+def tokens(input : String, patterns : List[Regex]) : List[String] = {
+    if(input.length == 0) Nil
+    else {
+        val first = firstMatch(input, patterns)
+        if(first == null)
+            List()
+        else
+            first :: tokens(input.substring(first.length), patterns)
+    }
+}
