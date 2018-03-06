@@ -2,7 +2,7 @@ import org.scalatest.FunSuite
 import java.io._
 import hw5part1._
 
-class OpSuite extends FunSuite{
+class OpSuite extends FunSuite {
     test("simple expression") {
         assert(42 == Product(Const(6), Const(7)).value)
     }
