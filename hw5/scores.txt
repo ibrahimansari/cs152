@@ -1,0 +1,92 @@
+[info] Loading settings from plugins.sbt ...
+[info] Loading project definition from /tmp/hw5/project
+[info] Updating {file:/tmp/hw5/project/}hw5-build...
+[info] Done updating.
+[info] Compiling 1 Scala source to /tmp/hw5/project/target/scala-2.12/sbt-1.0/classes ...
+[info] Done compiling.
+[info] Loading settings from build.sbt ...
+[info] Set current project to hw5 (in build file:/tmp/hw5/)
+[info] Updating {file:/tmp/hw5/}root...
+[info] Done updating.
+[info] Compiling 3 Scala sources to /tmp/hw5/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 3 Scala sources to /tmp/hw5/target/scala-2.12/test-classes ...
+[info] Done compiling.
+[info] DefSuite:
+[info] - Variable
+[info] - Expression with variable
+[info] - Expression with multiple variables
+[info] - Expression with multiple occurrences of the same variable
+[info] - Definition
+[info] - Shadowing
+[info] OpSuite:
+[info] - simple expression
+[info] - input expression
+[info] - nested expression
+[info] - random expression
+[info] - string op expression
+[info] ParseSuite:
+[info] - No variable
+[info] - One variable *** FAILED ***
+[info]   java.lang.NumberFormatException: For input string: "x"
+[info]   at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+[info]   at java.lang.Integer.parseInt(Integer.java:580)
+[info]   at java.lang.Integer.parseInt(Integer.java:615)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:16)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:15)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:13)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:11)
+[info]   at ParseSuite.$anonfun$new$2(ParseSuite.scala:12)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   ...
+[info] - One variable twice *** FAILED ***
+[info]   java.lang.NumberFormatException: For input string: "x"
+[info]   at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+[info]   at java.lang.Integer.parseInt(Integer.java:580)
+[info]   at java.lang.Integer.parseInt(Integer.java:615)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:16)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:15)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:13)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:11)
+[info]   at ParseSuite.$anonfun$new$3(ParseSuite.scala:16)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   ...
+[info] - Two variables *** FAILED ***
+[info]   java.lang.NumberFormatException: For input string: "x"
+[info]   at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+[info]   at java.lang.Integer.parseInt(Integer.java:580)
+[info]   at java.lang.Integer.parseInt(Integer.java:615)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:16)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:15)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:11)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:17)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:13)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:15)
+[info]   at ParseSuite.$anonfun$new$4(ParseSuite.scala:21)
+[info]   ...
+[info] - Two variables twice *** FAILED ***
+[info]   java.lang.NumberFormatException: For input string: "x"
+[info]   at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+[info]   at java.lang.Integer.parseInt(Integer.java:580)
+[info]   at java.lang.Integer.parseInt(Integer.java:615)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:16)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:15)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:11)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:17)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:13)
+[info]   at hw5part3$SimpleLanguageParser.eval(hw5part3.scala:15)
+[info]   at ParseSuite.$anonfun$new$5(ParseSuite.scala:25)
+[info]   ...
+[info] Run completed in 603 milliseconds.
+[info] Total number of tests run: 16
+[info] Suites: completed 3, aborted 0
+[info] Tests: succeeded 12, failed 4, canceled 0, ignored 0, pending 0
+[info] *** 4 TESTS FAILED ***
+[error] Failed tests:
+[error] 	ParseSuite
+[error] (test:test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 5 s, completed Mar 11, 2018 11:40:25 PM
+
+Total Points : 12
