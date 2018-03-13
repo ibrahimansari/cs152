@@ -15,7 +15,7 @@ object hw6part2 {
   case class Append(left: Number, right: Contents) extends ListItem
 
   class ListParser extends JavaTokenParsers {
-    def list: Parser[ListItem] =
+    
 
   }
 
