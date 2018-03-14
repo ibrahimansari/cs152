@@ -1,13 +1,7 @@
 import java.io._
 import scala.util.parsing.combinator._
 
-object hw6part1 {
-
-  val parser = new SimpleLanguageParser
-  parser.parseAll(parser.prog, new InputStreamReader(System.in)) match {
-    case parser.Success(result, next) => println(result.eval)
-    case _ => println("Error")
-  }
+object hw6part1 extends App {
 
   class Expr
 
@@ -54,6 +48,12 @@ object hw6part1 {
 
     def prog: Parser[Prog] = rep(valdef) ~ expr ^^ { case s ~ e => Prog(s, e) }
 
+  }
+
+  val parser = new SimpleLanguageParser
+  parser.parseAll(parser.prog, new InputStreamReader(System.in)) match {
+    case parser.Success(result, next) => println(result.eval)
+    case _ => println("Error")
   }
 
 }
