@@ -4,13 +4,9 @@ import scala.util.parsing.combinator._
 object hw6part1 extends App {
 
   class Expr
-
   case class Number(value: Int) extends Expr
-
   case class Variable(name: String) extends Expr
-
   case class Operator(left: Expr, right: Expr, f: (Int, Int) => Int) extends Expr
-
   case class Def(name: String, expr: Expr)
 
   case class Prog(defs: List[Def], expr: Expr) {
