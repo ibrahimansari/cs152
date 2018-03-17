@@ -1,0 +1,17 @@
+1729
+42
+42
+30
+List(1, 2, 3, 4)
+List(1, 2, 3)
+List(1, 2, 3, 4)
+List(1, 2, 3, 4)
+Error
+Error
+Error
+Error
+
+Total Points : 12
+
+
+
