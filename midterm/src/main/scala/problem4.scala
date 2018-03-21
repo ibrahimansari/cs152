@@ -12,7 +12,7 @@ object problem4 extends App {
        case a ~ Some("&&" ~ b) => a && b
      }
      
-     def factor: Parser[Boolean] = expr | "(" ~> expr <~ ")"
+     def factor: Parser[Boolean] = "true".toBoolean | "false".toBoolean | "(" ~> expr <~ ")"
   } 
    
   val parser = new SimpleLanguageParser
