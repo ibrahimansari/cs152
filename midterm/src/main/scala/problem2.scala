@@ -2,7 +2,7 @@ object problem2 extends App {
   def diffs(lst : List[Int]) = {
     val seed: (List[Int], Option[Int]) = (Nil, None)
     val foldResult = (lst :\ seed)((element, state) => 
-      ...
+
       )
     foldResult._1
   }
