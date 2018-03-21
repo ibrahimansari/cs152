@@ -44,7 +44,7 @@ class SL1Parser extends JavaTokenParsers {
       }
     }
 
-  def pow: Parser[Expr] = (factor ~ opt("^") ~ factor)) ^^ {
+  def pow: Parser[Expr] = (factor ~ opt("^") ~ factor) ^^ {
     
   }
   
