@@ -1,0 +1,6 @@
+Preferred Team Members: Vishan Menon, Enrique Cardenas, Juan Carlos Sandoval
+
+Project Ideas:
+1. Tinder for Musicians using Flutter
+2. YikYak for classes using Flutter
+3. Web App using Udash
