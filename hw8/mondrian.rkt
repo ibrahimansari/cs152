@@ -18,8 +18,6 @@
     empty
     (cons (divm s) (randoms (next s) (- l 1)))))
 
-(define (results x y) (list x y))
-
 (define (notempty l) (> (length l) 1))
 
 (define (mondrian width height rands)
