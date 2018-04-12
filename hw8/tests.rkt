@@ -1,6 +1,8 @@
-(define (save-pict picture filename)
-  (send (pict->bitmap picture) save-file filename 'png))
-(define test5 (mondrian 100 90 '(
+#lang slideshow
+(provide mondrian)
+
+(define(save-pict picture filename) (send (pict->bitmap picture) save-file filename 'png)
+ (test5) (mondrian 100 90 '(
 0 ; 100x90 - split? Both
 0.8 ; split width => w1 = 60, w2 = 40   
 0.6 ; split height => h1 = 48, h2 = 42
@@ -22,3 +24,4 @@
 0.3 ; white
 0.5 ; first unconsumed value
 )))
+
