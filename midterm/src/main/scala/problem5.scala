@@ -45,7 +45,7 @@ class SL1Parser extends JavaTokenParsers {
     }
 
   def pow: Parser[Expr] = (factor ~ opt("^") ~ factor) ^^ {
-    
+
   }
   
   def factor: Parser[Expr] = wholeNumber ^^ { x : String => Number(x.toInt) } |
