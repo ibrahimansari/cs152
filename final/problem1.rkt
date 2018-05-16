@@ -1,5 +1,7 @@
+#lang racket
+
 (define (invertCycle cycle)
-  (foldl (λ (newElement partialResult) (+ newElement (* 10 partialResult))) 0 cycle)
+  (flatten (foldr (λ (new partial) (append (list partial) (list new))) (list (list-ref cycle 0)) cycle))
   )
 
 (define (invert permutation)
