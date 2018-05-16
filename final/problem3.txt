@@ -1,5 +1,6 @@
 a. What objects does the parser yield for aapply and apow?
-
+aaply is a valdef. The parser yields an object of Function(params, block)
+apow is a defdef. The parser yields an object of Defdef(name, expr), where expr is a funliteral
 
 
 b. What objects are produced when these objects from the parse tree are evaluated? Describe their contents exactly.
